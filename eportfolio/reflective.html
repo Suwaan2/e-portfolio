@@ -124,6 +124,59 @@
         grid-row-end: 6;
         grid-column-end: 3;
       } */
+
+      @media (max-width: 500px) {
+    body {
+        margin: 10px;
+        font-size: 0.9rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .angry-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    #item {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+    
+    .logo {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+       
+    }
+}
     </style>
   </head>
   <body>
