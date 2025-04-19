@@ -56,3 +56,18 @@
     }
   
 }
+@media screen and (max-width: 450px) {
+    .mobile-logo{
+       display: none;
+    }
+    .navbar {
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .hero-image img{
+        width: 240px;
+        height: 240px;
+        margin-top: 15px;
+    }
+  
+}
