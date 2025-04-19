@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +77,8 @@ nav {
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
+  width: 200px;
+  text-align: center;
 }
 .cta-button a {
   text-decoration: none;
@@ -291,4 +294,12 @@ footer {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: colors 0.5s;
+}
+
+
+.info-btns{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  gap: 2rem;
 }
