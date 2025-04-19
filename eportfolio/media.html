@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media and Lists</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body{
+        color: black;
+       }
+       span{
+            color: #FF3D6E;
+       }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        ol, ul {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0;
+            list-style-position: inside;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ol li, ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        ol li:last-child, ul li:last-child {
+            border-bottom: none;
+        }
+
+        img, video, audio {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        audio {
+            width: 50%;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2, h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to <span>My Media</span>  and <span>Lists Page</span> </h1>
+
+    <h2><span>Ordered List</span></h2>
+    <ol>
+        <li>Learn HTML</li>
+        <li>Practice CSS</li>
+        <li>Master JavaScript</li>
+    </ol>
+
+    <h2><span>Unordered List</span></h2>
+    <ul>
+        <li>Photography</li>
+        <li>Traveling</li>
+        <li>Reading</li>
+    </ul>
+
+    <h2><span>Media Files</span></h2>
+    <h3>Image</h3>
+    <img src="./dragon.jpg" alt="Example Image" width="300">
+
+    <h3>Audio</h3>
+    <audio controls  style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <source src="./ding-ding-small-bell-76305.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="800" autoplay muted loop style="border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <source src="./202368-918049003_small.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
